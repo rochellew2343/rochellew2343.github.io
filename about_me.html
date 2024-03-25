@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html lang="en-US">
+    
+    <head>
+        <title>About Me!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/css285.css">
+
+		<!-- Browser Icon-->
+		<link rel="icon" type="image/x-icon" href="images/hobby.ico">
+		
+		<!-- External Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+	</head>
+	
+    <body>
+		<div id="mobile_nav">
+			<div class="mobile_nav_bar">
+				<div id="site_name">
+					<img src="images/kuroko.jpg" alt="kuroko icon" width="40px">
+				</div>
+				<div id="hamburger_div">
+					<!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+					<button id="hamburger_btn" onclick="myDropdownFunction()">&#9776;</button>
+				</div>
+			</div>
+			<div id="mobile_nav_links">
+				<a href="index.html">Home</a>
+				<a href="about_me.html">About Me + Video Test</a>
+				<a href="contact_page.html">Contact Me!</a>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="header">
+				<h1 class="center_text">More About Me!</h1>
+			</div>
+			<div class="sidebar">
+				<div class="navigation">
+                    <h2>Navigation</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about_me.html">About Me</a></li>
+                        <li><a href="kuroko_no_basket.html">Kuroko no Basket</a></li>
+                        <li><a href="webpoem.html">Web Poem</a></li>
+                        <li><a href="contact_page.html">Contact Me!</a></li>
+                    </ul>
+                </div>
+			</div>
+			<div class="content">
+				<div class="about_me">
+					<img class="center_image" src="images/picture_of_me_at_met.jpg" alt="a picture of me at the met" width="250px" height="250px">
+					<p>Hello everyone! My name is Rochelle, and I'm super excited to be taking this course. I am a junior majoring in Media Studies
+						with a concentration in Emerging Media.<br> I'm also a Computer Science minor. HTML and CSS are the first 2 coding languages
+						I've learned (about 7 years ago!) so I'm looking forward to refreshing my knowledge <br>and learning something new.
+						I'm also looking forward to learning about adding JavaScript to webpages, as that is something I've always wanted to learn
+						but never got the <br> chance to. Let's have a fun and productive spring semester!</p>
+				</div>
+				<div class="video_test">
+					<h2>Video Test</h2>
+					<video
+					class="center_image" 
+					poster="images/hq-opening_5-thumbnail.JPG"
+					width="50%"
+					controls
+					> 
+						<source src="videos/haikyuu-opening_5.mp4" type="video/mp4">
+					</video>
+					<p>For the video I have put my favorite opening (Hikari Are) from one of my favorite animes (Haikyuu)! Enjoy!</p>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
+
+<script>
+    function myDropdownFunction() {
+      var linksDiv = document.getElementById("mobile_nav_links");
+      if (linksDiv.style.display === "block") {
+        linksDiv.style.display = "none";
+      }
+		else {
+        linksDiv.style.display = "block";
+      }
+    }
+</script>
