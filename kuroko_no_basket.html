@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Kuroko no Basket</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/maincss.css">
+
+	<!-- Browser Icon-->
+	<link rel="icon" type="image/x-icon" href="images/hobby.ico">
+
+	<!-- External Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="mobile_nav">
+		<div class="mobile_nav_bar">
+			<div id="site_name">
+				<img src="images/kuroko.jpg" alt="kuroko icon" width="40px">
+			</div>
+			<div id="hamburger_div">
+				<!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+				<button id="hamburger_btn" onclick="myDropdownFunction()">&#9776;</button>
+			</div>
+
+		</div>
+
+		<div id="mobile_nav_links">
+			<a href="index.html">Home</a>
+			<a href="about_me.html">About Me + Video Test</a>
+			<a href="kuroko_no_basket.html">Kuroko no Basket</a>
+		</div>
+	</div>
+
+	<h1 class="center_text title_text">Kuroko no Basket</h1>
+	<h1 class="center_text">Also known as 'Kuroko's Basketball' and 'The Basketball Which Kuroko Plays'</h1>
+
+	<p>Kuroko's Basketball, is a manga that was serialized in Weekly Shōnen Jump. Three seasons of the anime adaption
+		have aired with a movie released in March of 2017. The story centers around the Seirin high school basketball
+		team, with Tetsuya Kuroko and Taiga Kagami as its core players, they face the Generation of Miracles as their
+		opponents in the Interhigh and the Winter Cup.</p>
+
+	<h2>Characters</h2>
+	<h3>Seirin Basketball Club</h3>
+	<!--
+		<img src="images/seiren-bc.jpg" usemap="#image-map" width="50%">
+
+		<map name="image-map">
+			<area target="_blank" alt="kuroko" title="kuroko" href="https://kurokonobasuke.fandom.com/wiki/Tetsuya_Kuroko" coords="66,70,1062,1066" shape="rect">
+			<area target="_blank" alt="kagami" title="kagami" href="https://kurokonobasuke.fandom.com/wiki/Taiga_Kagami" coords="1126,65,2131,1070" shape="rect">
+			<area target="_blank" alt="nigou" title="nigou" href="https://kurokonobasuke.fandom.com/wiki/Tetsuya_2" coords="2200,65,3194,1061" shape="rect">
+			<area target="_blank" alt="riko" title="riko" href="https://kurokonobasuke.fandom.com/wiki/Riko_Aida" coords="69,1133,1065,2136" shape="rect">
+			<area target="_blank" alt="hyuga" title="hyuga" href="https://kurokonobasuke.fandom.com/wiki/Junpei_Hyūga" coords="1132,1130,2131,2133" shape="rect">
+			<area target="_blank" alt="kiyoshi" title="kiyoshi" href="https://kurokonobasuke.fandom.com/wiki/Teppei_Kiyoshi" coords="2200,1133,3194,2133" shape="rect">
+			<area target="_blank" alt="izuki" title="izuki" href="https://kurokonobasuke.fandom.com/wiki/Shun_Izuki" coords="69,2202,1065,3199" shape="rect">
+			<area target="_blank" alt="mitobe" title="mitobe" href="https://kurokonobasuke.fandom.com/wiki/Rinnosuke_Mitobe" coords="1132,2196,2131,3199" shape="rect">
+			<area target="_blank" alt="koganei" title="koganei" href="https://kurokonobasuke.fandom.com/wiki/Shinji_Koganei" coords="2195,2196,3194,3195" shape="rect">
+		</map>
+-->
+</body>
+
+</html>
+
+<script>
+	function myDropdownFunction() {
+		var linksDiv = document.getElementById("mobile_nav_links");
+		if (linksDiv.style.display === "block") {
+			linksDiv.style.display = "none";
+		}
+		else {
+			linksDiv.style.display = "block";
+		}
+	}
+</script>

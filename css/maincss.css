@@ -1,0 +1,212 @@
+/* every page*/
+
+html {
+	font-size: 25px;
+}
+
+body {
+	background-color: #cce9ff;
+	font-family: "VT323", monospace;
+	margin: 0px;
+}
+
+.text-test {
+	padding: 50px;
+}
+
+.center_text {
+	text-align: center;
+}
+
+.clearfix {
+	overflow: auto;
+}
+
+.float_left {
+	float: left;
+}
+
+.center_image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title_text {
+	font-family: "Press Start 2P", system-ui;
+}
+
+#welcome {
+	font-family: "Press Start 2P", system-ui;
+}
+
+.main_div {
+	margin: 0px 150px;
+	padding: 25px;
+	border-radius: 20px;
+}
+
+.sidebar {
+	background-color: #80c8ff;
+	left: 50px;
+	width: 250px;
+	position: absolute;
+	padding: 10px;
+	/*margin-top: 10px;*/
+	border: 3px solid #4db2ff;
+	border-radius: 20px;
+}
+
+.homeworks {
+	line-height: auto;
+}
+
+/* homepage only styles */
+
+#pro_title {
+	font-size: 1.6rem;
+}
+
+
+.pro_text {
+	margin-left: 190px;
+}
+
+.profile {
+	/*position: absolute;*/
+	background-color: #80c8ff;
+	padding: 15px;
+	margin-top: 20px;
+	border: 3px solid #4db2ff;
+	border-radius: 20px;
+	left: 370px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.intro {
+	text-align: center;
+}
+
+img.intro {
+	border: 0px;
+	border-radius: 10px;
+}
+
+/*about me styles */
+
+/*contact form styles*/
+.contact_form {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	background-color: #80c8ff;
+	padding: 10px;
+	padding-bottom: 30px;
+	border: #4db2ff 3px solid;
+	border-radius: 20px;
+}
+
+.inputFields {
+	display: block;
+	margin: auto;
+}
+
+.contact_form button {
+	background-color: #cce9ff;
+}
+
+/* mobile navigation bar */
+
+#mobile_nav {
+	display: none;
+}
+
+.mobile_nav_bar {
+	background-color: #E8E8E8;
+	position: relative;
+	border: #AB1036 3px double;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#site_name {
+	/*background-color: pink;*/
+	align-self: center;
+	font-size: 1rem;
+	border: 0px;
+	border-radius: 50px;
+	margin-left: 5px;
+}
+
+#hamburger_div {
+	/*
+	background-color: aqua;
+	height: 75%;
+	font-size: 32px;
+	border: 1px solid;
+	*/
+	align-self: center;
+}
+
+#hamburger_btn {
+	background-color: white;
+	font-size: 32px;
+	border: white 1px solid;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#mobile_nav_links {
+	background-color: #E8E8E8;
+	display: none;
+	text-align: center;
+}
+
+#mobile_nav_links a {
+	display: block;
+	text-decoration: none;
+}
+
+/*small screen*/
+
+@media (max-width: 1000px) {
+	body {
+		background-color: #23262F;
+		color: #E8E8E8;
+	}
+
+	.float_left {
+		float: none;
+	}
+
+	.pro_text {
+		margin-left: 0px;
+	}
+
+	.sidebar {
+		display: none;
+	}
+
+	.profile {
+		border-color: #AB1036;
+		background-color: #E8E8E8;
+		color: #23262F;
+	}
+
+	.contact_form {
+		border-color: #AB1036;
+		background-color: #E8E8E8;
+		color: #23262F;
+	}
+
+	#temp_home_link {
+		display: none;
+	}
+
+	#mobile_nav {
+		display: block;
+	}
+}

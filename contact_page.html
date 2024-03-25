@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+  <head>
+    <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css285.css">
+    <!-- Browser Icon-->
+    <link rel="icon" type="image/x-icon" href="images/hobby.ico">
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--mobile navigation-->
+    <div id="mobile_nav">
+      <div class="mobile_nav_bar">
+        <div id="site_name">
+          <img src="images/kuroko.jpg" alt="kuroko icon" width="40px">
+        </div>
+        <div id="hamburger_div">
+          <!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+          <button id="hamburger_btn" onclick="myDropdownFunction()">&#9776;</button>
+        </div>
+      </div>
+      <div id="mobile_nav_links">
+        <a href="index.html">Home</a>
+        <a href="about_me.html">About Me + Video Test</a>
+        <a href="kuroko_no_basket.html">Kuroko no Basket</a>
+        <a href="webpoem.html">Web Poem</a>
+        <a href="contact_page.html">Contact Me!</a>
+      </div>
+    </div>
+    <!--page start-->
+    <div class="wrapper">
+      <div class="header">
+        <h1 class="center_text">Contact Me!</h1>
+      </div>
+      <div class="sidebar">
+        <div class="navigation">
+          <h2>Navigation</h2>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_me.html">About Me</a></li>
+              <li><a href="kuroko_no_basket.html">Kuroko no Basket</a></li>
+              <li><a href="webpoem.html">Web Poem</a></li>
+              <li><a href="contact_page.html">Contact Me!</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <form class="contact_form" action="mailto:rochellew2343@gmail.com?subject=Inquiry" target="_blank" method="post"
+        enctype="text/plain">
+          <p>Need to tell me something?</p>
+          <p>Use the form below!</p>
+          <input class="inputFields" type="text" name="name" placeholder="Name">
+          <input class="inputFields" type="text" name="email" placeholder="Email Address">
+          <textarea class="inputFields" rows="4" name="comments" placeholder="Comment"></textarea>
+          <br>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function myDropdownFunction() {
+    var linksDiv = document.getElementById("mobile_nav_links");
+    if (linksDiv.style.display === "block") {
+      linksDiv.style.display = "none";
+    }
+    else {
+      linksDiv.style.display = "block";
+    }
+  }
+</script>
