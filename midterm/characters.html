@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Characters</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/css_midterm.css">
+        
+		<!-- Browser Icon-->
+		<!--<link rel="icon" type="image/x-icon" href="">-->
+		
+		<!-- External Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <img src="images/heartcatch_precure_logo_jp.png" class="center_image" width="30%" alt="heartcatch pretty cure japanese logo">
+                <div id="mobile_nav">
+                    <div class="mobile_nav_bar">
+                        <div id="site_name">
+                            <img src="images/heartcatch_cures_emblem.png" alt="symbol icon" width="40px">
+                        </div>
+                        <div id="hamburger_div">
+                            <!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+                            <button id="hamburger_btn" onclick="myDropdownFunction()">&#9776;</button>
+                        </div>
+                    </div>
+                    <div id="mobile_nav_links">
+                        <a href="index.html">Home</a>
+                        <a href="characters.html">Characters</a>
+                        <a href="#">Story</a>
+                        <a href="#">Videos</a>
+                        <a href="inspirations.html">Inspirations</a>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="characters.html">Characters</a></li>
+                        <li><a href="#">Story</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="inspirations.html">Inspirations</a></li>
+                    </ul>    
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="side-title">Characters</h1>
+                <div class="characters">
+                    <div class="cures">
+                        <div class="c-text"><p>The Cures</p></div>
+                        <div class="blossom"><a href="cure_blossom.html"><img class="icon center_image" src="images/cures/cure_blossom-icon.png" width="50%"></a><p class="icon-text">Cure Blossom</p></div>
+                        <div class="marine"><img class="icon center_image" src="images/cures/cure_marine-icon.png" width="50%"><p class="icon-text">Cure Marine</p></div>
+                        <div class="sunshine"><img class="icon center_image" src="images/cures/cure_sunshine-icon.png" width="50%"><p class="icon-text">Cure Sunshine</p></div>
+                        <div class="moonlight"><img class="icon center_image" src="images/cures/cure_moonlight-icon.png" width="50%"><p class="icon-text">Cure Moonlight</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Website by Rochelle Williams</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function myDropdownFunction() {
+        var linksDiv = document.getElementById("mobile_nav_links");
+        if (linksDiv.style.display === "block") {
+            linksDiv.style.display = "none";
+        } else {
+            linksDiv.style.display = "block";
+        }
+    }
+</script>

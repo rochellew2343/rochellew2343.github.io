@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Heartcatch Pretty Cure Unoffical Website</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/css_midterm.css">
+        
+		<!-- Browser Icon-->
+		<!--<link rel="icon" type="image/x-icon" href="">-->
+		
+		<!-- External Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <img src="images/heartcatch_precure_logo_jp.png" class="center_image" width="30%" alt="heartcatch pretty cure japanese logo">
+                <div id="mobile_nav">
+                    <div class="mobile_nav_bar">
+                        <div id="site_name">
+                            <img src="images/heartcatch_cures_emblem.png" alt="symbol icon" width="40px">
+                        </div>
+                        <div id="hamburger_div">
+                            <!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+                            <button id="hamburger_btn" onclick="myDropdownFunction()">&#9776;</button>
+                        </div>
+                    </div>
+                    <div id="mobile_nav_links">
+                        <a href="index.html">Home</a>
+                        <a href="characters.html">Characters</a>
+                        <a href="#">Story</a>
+                        <a href="#">Videos</a>
+                        <a href="inspirations.html">Inspirations</a>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="characters.html">Characters</a></li>
+                        <li><a href="#">Story</a></li>
+                        <li><a href="#">Videos</a></li>
+                        <li><a href="inspirations.html">Inspirations</a></li>
+                    </ul>    
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="title">HeartCatch Pretty Cure!</h1>
+                <div class="photo-slideshow">
+                    <div class="slideshow">
+                        <img class="slides" src="images/slideshow/title_card.webp">
+                        <img class="slides" src="images/slideshow/tsubomi-and-erika.webp">
+                        <img class="slides" src="images/slideshow/4-cures-uniform.webp">
+                        <img class="slides" src="images/slideshow/sponsor-card-2-cure.webp">
+                        <img class="slides" src="images/slideshow/super-silloutte.webp">
+                    </div>
+                    <div class="buttons">
+                        <div class="controls">
+                            <button class="" type="button" onclick="plusDivs(-1)">❮ Prev</button>
+                            <button class="" type="button" onclick="plusDivs(1)">Next ❯</button>
+                        </div>
+                        <button class="count" type="button" onclick="currentDiv(1)">1</button> 
+                        <button class="count" type="button" onclick="currentDiv(2)">2</button> 
+                        <button class="count" type="button" onclick="currentDiv(3)">3</button> 
+                        <button class="count" type="button" onclick="currentDiv(4)">4</button>
+                        <button class="count" type="button" onclick="currentDiv(5)">5</button>
+                    </div>
+                </div>
+                    <div class="premise-image"><img class="float_left" src="images/hcp-4cures.webp" width="15%" alt="heartcatch pretty cure 4 cures"></div>
+                    <div class="premise-text">
+                        <h2>Premise</h2>
+                        <p>In each person resides a Heart Flower, which is connected to the great Heart Tree that watches over everyone.
+                            Protecting this tree are the HeartCatch Pretty Cures, who defend it against the Desert Apostles, who plan to wilt everything
+                            and turn the world into a desert. However, when the current Pretty Cure, Cure Moonlight, is defeated in battle and
+                            the Heart Tree loses its flowers, she sends two fairies, Chypre and Coffret, to the surface to seek out her replacement.
+                            They find Tsubomi Hanasaki, a shy flower-loving girl who recently moved to Kibougahana with her family who is given the power
+                            to become Cure Blossom. Alongside her new friend, Erika Kurumi, who becomes Cure Marine, they fight against the Desert Apostles,
+                            who transform the wilting Heart Flowers inside people into monsters known as Desertians. By defeating these monsters,
+                            they gain Heart Seeds, which allow the Heart Tree to become healthier again.</p>
+                    </div>
+                <div class="seasons">
+                    <div class="fresh">
+                        <img class="fresh-image center_image" src="images/fpc-poster-2018.webp" width="10%" alt="fresh pretty cure 2018 poster">
+                        <div class="fresh-text center_image"><p><b>Previous Season</b><br><a href="#">Fresh Pretty Cure</a></p></div>
+                    </div>
+                    <div class="heartcatch">
+                        <img class=" heartcatch-image center_image" src="images/hcp-2018-poster.webp" width="10%" alt="heartcatch pretty cure 2018 poster">
+                        <div class="heartcatch-text center_image"><p><b>Current Season</b><br>HeartCatch Pretty Cure</p></div>
+                    </div>
+                    <div class="suite">
+                        <img class="suite-image center_image" src="images/spc-poster-2018.webp" width="10%" alt="suite pretty cure 2018 poster">
+                        <div class="suite-text center_image"><p><b>Next Season</b><br><a href="#">Suite Pretty Cure</a></p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Website by Rochelle Williams</p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--photo slideshow javascript-->
+<script>
+    function myDropdownFunction() {
+        var linksDiv = document.getElementById("mobile_nav_links");
+        if (linksDiv.style.display === "block") {
+            linksDiv.style.display = "none";
+        } else {
+            linksDiv.style.display = "block";
+        }
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("slides");
+        var dots = document.getElementsByClassName("count");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" count-colored", "");
+        }
+        x[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " count-colored";
+    }
+</script>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Cure Blossom</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css_midterm.css">
+
+    <!-- Browser Icon-->
+    <!--<link rel="icon" type="image/x-icon" href="">-->
+
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="images/heartcatch_precure_logo_jp.png" class="center_image" width="30%"
+                alt="heartcatch pretty cure japanese logo">
+                <div id="mobile_nav">
+                    <div class="mobile_nav_bar">
+                        <div id="site_name">
+                            <img src="images/heartcatch_cures_emblem.png" alt="symbol icon" width="40px">
+                        </div>
+                        <div id="hamburger_div">
+                            <!--<a href="#" onclick="myDropdownFunction()">&#9776;</a>-->
+                            <button id="hamburger_btn" onclick="myDropdownFunction()">&#9776;</button>
+                        </div>
+                    </div>
+                    <div id="mobile_nav_links">
+                        <a href="index.html">Home</a>
+                        <a href="characters.html">Characters</a>
+                        <a href="#">Story</a>
+                        <a href="#">Videos</a>
+                        <a href="inspirations.html">Inspirations</a>
+                    </div>
+                </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="characters.html">Characters</a></li>
+                    <li><a href="#">Story</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="inspirations.html">Inspirations</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <h1 class="title">Tsubomi Hanasaki/Cure Blossom</h1>
+            <div class="cure-blossom">
+                <div class="tsubomi-civilian">
+                    <img class="center_image" src="images/cures/tsubomi-civillian.webp" width="50%">
+                    <p class="center_text">Civilian Clothes</p>
+                </div>
+                <div class="tsubomi-uniform">
+                    <img class="center_image" src="images/cures/tsubomi-uniform.webp" width="50%">
+                    <p class="center_text">School Uniform</p>
+                </div>
+                <div class="tsubomi-cure">
+                    <img class="center_image" src="images/cures/cure-blossom.webp" width="50%">
+                    <p class="center_text">Cure Blossom</p>
+                </div>
+                <div class="blossom-video">
+                    <video
+					class="center_image" 
+					width="100%"
+					controls
+					> 
+						<source src="videos/cure_blossom-transformation.mp4" type="video/mp4">
+					</video>
+                    <p class="center_text">Cure Blossom's Transformation</p>
+                    <p class="center_text"><i>"The flowers spreading throughout the land, Cure Blossom!"</i></p>
+                </div>
+                <div class="blossom-text">
+                    <h2>Profile</h2>
+                    <p><b>Age:</b> 14</p>
+                    <p><b>Role:</b> Pretty Cure</p>
+                    <p><b>Alter Ego(s):</b> Cure Blossom; Super Cure Blossom</p>
+                    <p><b>Theme:</b> Cherry blossoms</p>
+                    <p><b>Theme Color:</b> Pink</p>
+                    <p><b>Power Source:</b> Flowers; Earth</p>    
+                    <p><b>Transformation Phrase:</b> Pretty Cure! Open My Heart!</p>    
+                    <p><b>Transformation Item: </b>Heart Perfume; Heart Seed</p>
+                    <p><b>Weapon:</b> Blossom Tact; Heartcatch Mirage</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Website by Rochelle Williams</p>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function myDropdownFunction() {
+        var linksDiv = document.getElementById("mobile_nav_links");
+        if (linksDiv.style.display === "block") {
+            linksDiv.style.display = "none";
+        } else {
+            linksDiv.style.display = "block";
+        }
+    }
+</script>
