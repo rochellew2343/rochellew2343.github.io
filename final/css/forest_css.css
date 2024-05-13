@@ -1,0 +1,302 @@
+html {
+	font-size: 25px;
+}
+
+body {
+	background-color: darkolivegreen;
+	margin: 0px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.lora-italic {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.main-button {
+    border: 0;
+    line-height: 1.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background-color: #2a3517;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.main-button:hover {
+    background-color: #1c2310;
+}
+
+.text-box{
+    padding: 10px;
+    margin: 5px 300px;
+}
+
+.big-text{
+    font-size: larger;
+}
+
+@keyframes slightFade{
+    0% {opacity: 0;}
+    100% {opacity: 0.75;}
+}
+
+.fadeSlight{
+    opacity: 0;
+    animation-name: slightFade;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+}
+
+/*start page*/
+#start-image{
+    animation-name: fadeIn;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#start-text{
+    animation-name: fadeIn;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+#start-button{
+    animation-name: fadeIn;
+    animation-delay: 5s;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/*choice 1*/
+.child-bg{
+    z-index: 1;
+}
+
+/*
+.laugh-image{
+    opacity: 0;
+    z-index: 2;
+    position: fixed;
+    left:25%;
+    top: 30%;
+}
+
+.hyacinth-image{
+    opacity: 0;
+    z-index: 2;
+    position: fixed;
+    right:25%;
+    top: 30%;
+}
+*/
+
+#laugh:hover{
+    color: lightyellow;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#bells:hover{
+    color:silver;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/*choice 2*/
+@keyframes fadeToBlack{
+    0% {background-color: darkolivegreen; color: black;}
+    100% {background-color: black; color: white;}
+}
+
+@keyframes fadeFromBlack{
+    0% {background-color: black; color: white;}
+    100% {background-color: darkolivegreen; color: black;}
+}
+
+.darkness-animate{
+    animation-name: fadeToBlack;
+    animation-delay: 1s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.lights{
+    color:goldenrod;
+    background-color: lemonchiffon;
+    text-shadow: 1px 1px 1px darkgoldenrod;
+    transition-duration: 0.4s;
+}
+
+.lights:hover {
+    background-color: palegoldenrod;
+}
+
+.gems{
+    color:paleturquoise;
+    background-color: turquoise;
+    text-shadow: 1px 1px 1px mediumaquamarine;
+    transition-duration: 0.4s;
+}
+
+.gems:hover {
+    background-color: teal;
+}
+
+.shadows{
+    color:black;
+    background-color: darkslateblue;
+    text-shadow: 1px 1px 1px dimgray;
+    transition-duration: 0.4s;
+}
+
+.shadows:hover {
+    background-color: #241f47;
+}
+
+/*choice 3A*/
+.darkness{
+    background-color: #000;
+    color: white;
+}
+
+/*choice 3*/
+.outOfBlack{
+    animation-name: fadeFromBlack;
+    animation-delay: 1.5s;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.left-image{
+    opacity: 0;
+    z-index: 2;
+    position: fixed;
+    left:25%;
+    top: 30%;
+}
+
+.right-image{
+    opacity: 0;
+    z-index: 2;
+    position: fixed;
+    right:25%;
+    top: 30%;
+}
+
+/*fairy ending*/
+@keyframes fadeToFairy{
+    0%{background-color: inherit; color: inherit;}
+    100%{background-color: pink; color:palevioletred}
+}
+
+.fadeFairy{
+    animation-name: fadeToFairy;
+    animation-duration: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+.fairyText{
+    opacity: 0;
+}
+
+.fairyTextAni{
+    animation-name: fadeIn;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.fairy-button{
+    background-color: palevioletred;
+    color:pink;
+    text-shadow: 1px 1px 1px mediumvioletred;
+}
+
+.fairy-button:hover{
+    background-color: #b82e5c;
+}
+
+/*mermaid ending*/
+@keyframes fadeToMermaid{
+    0%{background-color: inherit; color: inherit;}
+    100%{background-color: paleturquoise; color:mediumturquoise}
+}
+
+.fadeMermaid{
+    animation-name: fadeToMermaid;
+    animation-duration: 2.1s;
+    animation-fill-mode: forwards;
+}
+
+.mermaidText{
+    opacity: 0;
+}
+
+.mermaidTextAni{
+    animation-name: fadeIn;
+    animation-delay: 2.3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.mermaid-button{
+    background-color: mediumturquoise;
+    color: paleturquoise;
+    text-shadow: 1px 1px 1px turquoise;
+}
+
+.mermaid-button:hover{
+    background-color: #248f8b;
+}
+
+/*witch ending*/
+@keyframes fadeToWitch{
+    0%{background-color: inherit; color: inherit;}
+    100%{background-color: indigo; color:mediumpurple}
+}
+
+.fadeWitch{
+    animation-name: fadeToWitch;
+    animation-duration: 2.1s;
+    animation-fill-mode: forwards;
+}
+
+.witchText{
+    opacity: 0;
+}
+
+.witchTextAni{
+    animation-name: fadeIn;
+    animation-delay: 2.3s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.witch-button{
+    background-color: mediumpurple;
+    color: indigo;
+    text-shadow: 1px 1px 1px rebeccapurple;
+}
+
+.witch-button:hover{
+    background-color: #5c2eb8;
+}
